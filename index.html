@@ -131,14 +131,6 @@
             margin-right: 20px;
         }
         
-        .slideBtn {
-            max-width: 40px;
-            height: 5px;
-            background-color: black;
-            border: black;
-            margin: 5px;
-        }
-        
         .scrolBlock {
             position: relative;
             z-index: 200;
@@ -193,11 +185,11 @@
 
         <div id="contentSlide">
             <div class="flex-container">
-                <div class="flex-child" onclick="scrolldiv0()"></div>
-                <div class="flex-child" onclick="scrolldiv1()"></div>
-                <div class="flex-child" onclick="scrolldiv2()"></div>
-                <div class="flex-child" onclick="scrolldiv3()"></div>
-                <div class="flex-child" onclick="scrolldiv4()"></div>
+                <div class="flex-child child0" onclick="scrolldiv0()"></div>
+                <div class="flex-child child1" onclick="scrolldiv1()"></div>
+                <div class="flex-child child2" onclick="scrolldiv2()"></div>
+                <div class="flex-child child3" onclick="scrolldiv3()"></div>
+                <div class="flex-child child4" onclick="scrolldiv4()"></div>
             </div>
         </div>
         <div class="scrolBlock" id="scrolBlock"></div>
@@ -235,7 +227,6 @@
             <br>
         </div>
     </section>
-
 
 
     <script>
@@ -354,26 +345,51 @@
         function scrolldiv0() {
             var elem = document.getElementById("divZero");
             elem.scrollIntoView();
+            document.querySelector(".child0").style.backgroundColor = "black";
+            document.querySelector(".child1").style.backgroundColor = "#fff";
+            document.querySelector(".child2").style.backgroundColor = "#fff";
+            document.querySelector(".child3").style.backgroundColor = "#fff";
+            document.querySelector(".child4").style.backgroundColor = "#fff";
         }
 
         function scrolldiv1() {
             var elem = document.getElementById("divOne");
             elem.scrollIntoView();
+            document.querySelector(".child0").style.backgroundColor = "#fff";
+            document.querySelector(".child1").style.backgroundColor = "black";
+            document.querySelector(".child2").style.backgroundColor = "#fff";
+            document.querySelector(".child3").style.backgroundColor = "#fff";
+            document.querySelector(".child4").style.backgroundColor = "#fff";
         }
 
         function scrolldiv2() {
             var elem = document.getElementById("divTwo");
             elem.scrollIntoView();
+            document.querySelector(".child0").style.backgroundColor = "#fff";
+            document.querySelector(".child1").style.backgroundColor = "#fff";
+            document.querySelector(".child2").style.backgroundColor = "black";
+            document.querySelector(".child3").style.backgroundColor = "#fff";
+            document.querySelector(".child4").style.backgroundColor = "#fff";
         }
 
         function scrolldiv3() {
             var elem = document.getElementById("divThree");
             elem.scrollIntoView();
+            document.querySelector(".child0").style.backgroundColor = "#fff";
+            document.querySelector(".child1").style.backgroundColor = "#fff";
+            document.querySelector(".child2").style.backgroundColor = "#fff";
+            document.querySelector(".child3").style.backgroundColor = "black";
+            document.querySelector(".child4").style.backgroundColor = "#fff";
         }
 
         function scrolldiv4() {
             var elem = document.getElementById("divFour");
             elem.scrollIntoView();
+            document.querySelector(".child0").style.backgroundColor = "#fff";
+            document.querySelector(".child1").style.backgroundColor = "#fff";
+            document.querySelector(".child2").style.backgroundColor = "#fff";
+            document.querySelector(".child3").style.backgroundColor = "#fff";
+            document.querySelector(".child4").style.backgroundColor = "black";
         }
     </script>
 </body>
